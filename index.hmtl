@@ -27,8 +27,8 @@
       ar-modes="scene-viewer quick-look webxr"
       camera-controls
       auto-rotate
-      shadow-intensity="1">
+      shadow-intensity="1"
+      poster="poster.png">
     </model-viewer>
   </body>
 </html>
-
