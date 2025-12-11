@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script type="module"
-      src="https://www.unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
-    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Librería Model Viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
     <style>
       body {
         margin: 0;
-        overflow: hidden;
         background: #ffffff;
+        overflow: hidden;
       }
       model-viewer {
         width: 100vw;
@@ -21,13 +21,14 @@
   </head>
 
   <body>
-    <model-viewer 
-      src="NOMBRE_DEL_MODELO.glb"
+    <model-viewer
+      src="modelo.glb"
       ar
       ar-modes="scene-viewer quick-look webxr"
       camera-controls
       auto-rotate
-      environment-image="neutral">
+      shadow-intensity="1">
     </model-viewer>
   </body>
 </html>
+
